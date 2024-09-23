@@ -2,13 +2,13 @@
 <img width="1918" alt="image" src="https://github.com/user-attachments/assets/2c9a844c-b4cd-4066-a409-a90c69ed721e">
 
 ## Introduction:
-The web application is a LEGO Digital Library, created for LEGO enthusiasts to explore collections and share their favorite sets. Users can view detailed information about each LEGO set and filter sets by various themes. Once logged in, users can manage collections,adding, editing, and deleting LEGO sets.
+The web application is a LEGO Digital Library, created for LEGO enthusiasts to explore collections and share their favorite sets. Users can view detailed information about each LEGO set and filter sets by various themes. Once logged in, users can manage collections, adding, editing, and deleting LEGO sets.
 
 Visit the website [here](https://lego-library.onrender.com). 
 
 Note:  
 The accessing could be slow or randomly down since the server is hosted under a free plan.
-Incase the server is down, please check the [screenshots](https://github.com/Ryan-215/Lego_Library/blob/main/screenshots.md) document.
+In case the server is down, please check the [screenshots](https://github.com/Ryan-215/Lego_Library/blob/main/screenshots.md) document.
 
 ## Key Features
 Tech Stacks: JavaScript, HTML, CSS, EJS, Node.js, Express.js, MongoDB, PostgreSQL  
