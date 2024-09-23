@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Add a set</title>
+  </head>
+  <body>
+    <!-- include navbar partial -->
+    <%- include('partials/navbar', {page:'lego/addSet'}) %>
+    <div class="hero bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Add a set</h1>
+          <p class="py-6">We are excited to know the LEGO set from you!</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <form method="post" action="/lego/addSet">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-0">
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium">
+              Name <br>
+              <input type="text" name="name" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-300">
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium">
+              Year <br>
+              <input type="number" name="year" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-300">
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium">
+                Number of Parts <br>
+                <input type="number" name="num_parts" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-300">
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium">
+              URL for Image <br>
+              <input type="url" name="img_url" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-300">
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium">
+              Theme <br>
+              <select name="theme_id" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-300">
+                  <% themes.forEach(theme=>{ %>
+                      <option value="<%= theme.id %>"><%= theme.name%></option>
+                  <% }) %>
+              </select>
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium">
+              Set Number <br>
+              <input type="text" name="set_num" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-300">
+          </label>
+        </div>
+        <div class="mt-6">
+          <button type="submit" class="btn bg-gray-800 text-white hover:bg-gray-700">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

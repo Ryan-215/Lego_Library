@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>LEGO Library</title>
+  </head>
+  <body">
+    <!-- include navbar partial -->
+    <%- include('partials/navbar', {page:""}) %>
+    <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-4">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Let's dive into the LEGO World!</h1>
+            <p class="py-6">So Many LEGO Sets are collected in this website! </p>
+            <a href="/lego/sets" class="btn bg-gray-800 text-white  hover:bg-gray-700">Explore</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div>
+          <div class="card h-[600px] bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-[400px]" src="https://cdn.rebrickable.com/media/sets/0241187567-1.jpg" alt="a Lego set of Ninjago" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ninjago: Build Your Own Adventure</h2>
+              <p>Written by Scarlett O'Hara, book includes more than 50 building ideas!</p>
+              <a class="btn btn-active bg-gray-800 text-white hover:bg-gray-700" href="/lego/sets/0241187567-1">Explore</a>
+              </div>
+            </div>
+        </div>
+        <div>
+          <div class="card h-[600px] bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-[400px]" src="https://cdn.rebrickable.com/media/sets/003-1.jpg" alt="a Lego set of Mechanic"/>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Master Mechanic Set</h2>
+              <p>This set was released in America (USA/CAN) by Samsonite in 1966.</p>
+              <a class="btn btn-active bg-gray-800 text-white hover:bg-gray-700" href="/lego/sets/003-1">Explore</a>
+              </div>
+            </div>
+        </div>
+        <div>
+          <div class="card h-[600px] bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-[400px]" src="https://cdn.rebrickable.com/media/sets/010423-1.jpg" alt="a Lego set of a horse"/>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">The Majestic Horse</h2>
+              <p>Designed by previous 2017 Lego Masters UK winners Nathan Dias and Steve Guinness.</p>
+              <a class="btn btn-active bg-gray-800 text-white hover:bg-gray-700" href="/lego/sets/010423-1">Explore</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

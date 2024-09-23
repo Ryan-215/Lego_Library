@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- include navbar partial -->
+    <%- include('partials/navbar', {page:'/about'}) %>
+    <div class="container mx-auto p-4">
+      <div class="hero bg-base-200 rounded-lg p-6">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">About</h1>
+            <p class="py-6">Hi from Yansong 👋</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+      <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-16">
+          <div class="bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-200" src="https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/0b35c6ac69104d0c8c961674cbbf6485.jpg" alt="The Cover of Animation named Furilian"/>
+            </figure>
+          </div>
+            <div class="bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">About Me</h2>
+                <p>Hi! I'm Yansong! My student number is 138120225. I'd like to introduce you the other side of me, as you can see that there is a  poster of an Anime, this is the one what I'm currently watching. After doing homework, I basically stay at home, I prefer watching anime than going outside and I also don't like sports very much. So, let me introduce an Anime to you which is called <b>"Furilian: Beyond Journey's End"</b> and it was so great!</p>
+                <a class="btn btn-active btn-link" href="https://youtu.be/Iwr1aLEDpe4?si=45G2NIENAI8nrcZY" target="_blank">OFFICIAL TRAILER</a>
+              </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
